@@ -3,6 +3,6 @@ import workingDateRouter from "./routes/workingDate.routes";
 
 const app = express();
 
-app.use("/working-date", workingDateRouter);
+app.use("/", workingDateRouter);
 
 export default app;

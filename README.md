@@ -33,7 +33,7 @@ La API quedará disponible en http://localhost:3000
 
 ## Endpoints
 
-### `GET /working-date`
+### `GET /`
 
 **Parámetros de query**
 
