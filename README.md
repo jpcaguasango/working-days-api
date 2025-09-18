@@ -57,6 +57,15 @@ La API quedará disponible en http://localhost:3000
 }
 ```
 
+## Respuesta Invalida
+
+```json
+{
+  "error": "InvalidParameters",
+  "message": "Detalle del error"
+}
+```
+
 ## Escenarios
 
 |  # | Escenario (descripción)                                                                                                | URL de ejemplo                                                                    |
@@ -71,5 +80,16 @@ La API quedará disponible en http://localhost:3000
 |  8 | `hours=3` desde un día laboral a las 11:30 a.m. (COL) → resultado esperado: mismo día 3:30 p.m. (COL)                  | `http://localhost:3000/working-date?date=2025-07-02T04:30:00Z&hours=3`            |
 |  9 | `date=2025-04-10T15:00:00.000Z&days=5&hours=4` (17 y 18 abril festivos) → resultado esperado: 2025-04-21T20:00:00.000Z | `http://localhost:3000/working-date?date=2025-04-10T15:00:00.000Z&days=5&hours=4` |
 
+## 🧩 Stack Tecnológico
+
+Este proyecto está construido con las siguientes tecnologías y herramientas:
+
+- **Node.js**: Entorno de ejecución para JavaScript/TypeScript en el servidor.
+- **Express**: Framework minimalista para crear la API REST.
+- **TypeScript**: Tipado estático y robusto para mayor mantenibilidad y seguridad en el código.
+- **date-fns** y **date-fns-tz**: Manejo preciso de fechas, horas y zonas horarias (America/Bogota → UTC).
+- **ESLint**: Linter para mantener un código consistente y libre de errores.
+- **Prettier**: Formateador de código para mantener un estilo uniforme.
+- **Yarn**: Gestor de dependencias rápido y confiable.
 
 
